@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>I.M.S</h1>
+            <p>Inventory Managment System</p>
+        </div>
+        <div class="form-container">
+        <form id="loginForm">
+            <div class="select-wrapper">
+                <h1>Login</h1>
+                <br>
+            
+            <select id="user_type" name="user_type" >
+            
+                <option value="admin">admin</option>
+                <option value="staff">staff</option>
+            </select>
+        
+            <div class="input-box">
+                <input type="text" id="username" name="username" placeholder="  username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="  password" required>
+            </div>
+            <div class="btn">
+                <button>Login</button>
+            </div>
+        </div>
+       
+        </form>
+    </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Redirect to spage.html
+            window.location.href = 'spage.html';
+        });
+    </script>
+</body>
+</html>

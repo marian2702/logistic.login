@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.header{
+    display: flex;      
+    padding: 100 0;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1{
+    font-family: sans-serif;
+    font-size: 80px;
+    color: rgb(92, 151, 37);
+
+}
+.header p{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-decoration: overline;
+    color: rgb(92, 151, 37);
+}
+.form-container{
+    display: flex;
+    justify-content: center;   
+    width: 420px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgb(92, 151, 37);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 0 auto;
+}
+
+.select-wrapper h1{
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+}
+.select-wrapper{
+    position: relative;
+}
+
+
+.select-wrapper select {
+    border-radius: 10px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 100px;
+    border: 2px solid rgb(92, 151, 37);
+    outline: none; 
+}
+.input-box{
+    margin: 10 0;
+    
+}
+.input-box input{
+    border-radius: 100px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 160px;
+    border: 2px solid rgb(92, 151, 37);
+    outline: none;
+}
+.btn{
+    margin: 0 17 0 21;
+}
+
+
+.btn button{
+    border-radius: 100px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 120px;
+    border: 2px solid rgb(92, 151, 37);
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: green;
+    color: #fff;
+    border: white 1px solid;
+}
+
+/* Media query for small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .container {
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-position: center;
+         /* Center the background image */
+    }
+
+    .header h1 {
+        font-size: 60px; /* Decrease font size for h1 */
+    }
+
+    .header p {
+        font-size: 20px; /* Decrease font size for p */
+    }
+
+
+    .form-container {
+        
+        width: 90%; /* Adjust width to 90% of the screen width */
+        max-width: 320px; /* Limit maximum width to prevent overflow */
+        margin: -90px auto ; /* Center the form container horizontally */
+        height: auto;
+        padding: 20px 10px; /* Add padding to the container */
+        border: none;
+    }
+
+    .select-wrapper select,
+    .input-box input {
+        width: 100%; /* Make inputs full width */
+        font-size: 14px; /* Decrease font size for inputs */
+    }
+}
+
